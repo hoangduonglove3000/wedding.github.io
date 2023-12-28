@@ -1,0 +1,10 @@
+.navbar-nav{
+    display: flex !importand;
+}
+.nav-link{
+    color: #413d3d;
+    font-size: 1rem;
+    font-weight: 600;
+    /* padding: 25px 17px; */
+    text-transform: uppercase;
+}
