@@ -281,3 +281,10 @@ a{
 .flaticon-two:before {
     content: "\f10c";
 }
+.vertical-line span img{
+  width: 70px;
+  position: absolute;
+  top: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -77,7 +77,7 @@
     text-align: center;
 }
 .count-down-section{
-    background-image: url(./images/MON03765.jpg);
+    background-image: url(../images/MON03765.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -399,7 +399,7 @@
 .cta {
     position: relative;
     text-align: center;
-    background-image: url(images/BEEE5810.jpg);
+    background-image: url(../images/BEEE5810.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -810,7 +810,7 @@
 
   /*  */
 .rsvp-section {
-background-image: url(images/MON03906.jpg);
+background-image: url(../images/MON03906.jpg);
 background-size: cover;
 background-position: center;
   position: relative;
