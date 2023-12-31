@@ -288,3 +288,43 @@ a{
   left: 50%;
   transform: translateX(-50%);
 }
+
+.ivitation-cards{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+.ivitation-cards .ivitation-cards-img{
+  width: 800px;
+  overflow: hidden;
+}
+.ivitation-cards .ivitation-cards-img img{
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .ivitation-cards .ivitation-cards-img{
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+canvas{
+  width: 100% !important;
+}
+.audio{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}

@@ -399,9 +399,10 @@
 .cta {
     position: relative;
     text-align: center;
-    background-image: url(../images/BEEE5810.jpg);
+    background-image: url(../images/MON03708.jpg);
     background-size: cover;
     background-position: center;
+    background-position-y: 25%;
   }
   
   .cta:before {

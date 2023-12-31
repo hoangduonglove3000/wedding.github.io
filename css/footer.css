@@ -1,9 +1,10 @@
 .site-footer {
-  background: url("../images/MON03708.jpg") center center/cover no-repeat local;
+  background: url("../images/MON03923.jpg") center center/cover no-repeat local;
   text-align: center;
   color: #fff;
   padding: 160px 0;
   position: relative;
+  background-position-y: 22%;
 }
 
 @media (max-width: 1199px) {
@@ -40,7 +41,7 @@
   font-size: 3.72222rem;
   color: #fff;
   margin: 0 0 0.3em;
-  padding: 0 275px;
+  padding: 0 260px;
   text-transform: capitalize;
   letter-spacing: 5px;
   position: relative;
