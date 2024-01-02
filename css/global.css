@@ -8,6 +8,9 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
+.main{
+  overflow: hidden;
+}
 
 .logo{
     font-family: 'Great Vibes', cursive;
@@ -58,7 +61,7 @@ a{
 }
 .social-links{
     display: flex !important;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 0 !important;
 }
 
@@ -328,3 +331,81 @@ canvas{
   background-color: #fff;
   transform-origin: 0 0;
 }
+.swiper-slide{
+  height: 200px !important;
+}
+.swiper-slide i{
+  font-size: 36px;
+  color: #5c978b;
+  text-align: end;
+}
+.swiper-slide p{
+  font-size: 18px;
+}
+.swiper-slide span{
+  display: block;
+  font-size: 20px;
+}
+
+
+.save-the-date{
+  height: 350px;
+  width: 350px;
+  /* background-color: rgba(94, 154, 142, 0.3); */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.save-the-date-animation{
+  height: 350px;
+  width: 350px;
+  background-color: rgba(94, 154, 142, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  animation: save-the-date-pulse 1s;
+  animation-iteration-count: infinite;
+
+}
+
+.save-the-date-content{
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  background-color: rgba(94, 154, 142, 0.7);
+  z-index: 9;
+  text-align: center;
+}
+.save-the-date-content h4{
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  font-size: 2.22222rem;
+  color: #fff;
+  margin: 55px 0 0.2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.save-the-date-content .date {
+  font-size: 1.11111rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+@-webkit-keyframes save-the-date-pulse {
+  from {
+    transform: scale(1.04);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+

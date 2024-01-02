@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="./images/BEEE5810.jpg">
+  <meta property="og:title" content="Đám Cưới của Hoàng & Dương">
+  <meta property="og:description" content="Hãy cùng chia sẻ niềm vui và tình yêu trong ngày cưới của Hoàng và Dương">
+
+
 
     <!-- Favicon and Touch Icons -->
     <link href="images/heart.png" rel="shortcut icon" type="image/png">
@@ -11,6 +16,7 @@
     <link href="images/heart.png" rel="apple-touch-icon" sizes="72x72">
     <link href="images/heart.png" rel="apple-touch-icon" sizes="114x114">
     <link href="images/heart.png" rel="apple-touch-icon" sizes="144x144">
+    
 
   <title>Lovly Wedding</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,17 +31,38 @@
   <link rel="stylesheet" href="./css/hero.css">
   <link rel="stylesheet" href="./css/heartanimation.css">
 
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 
 <body>
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake" style="font-size: 30px;">❅</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake" style="font-size: 40px;">❆ </div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake" style="font-size: 30px;">❆</div>
+    <div class="snowflake" style="font-size: 22px;">❅</div>
+    <div class="snowflake" style="font-size: 50px;">❆</div>
+    <div class="snowflake" style="font-size: 20px;">❅</div>
+    <div class="snowflake" style="font-size: 70px;">❆</div>
+    <div class="snowflake" style="font-size: 20px;">❆</div>
+  </div>
+    
   <header class="py-4">
     <div class="container">
       <div class="w-100 d-flex items-center justify-content-between">
         <a class="logo d-flex items-center justify-content-center" href="!#">
           H
-          <img src="./images/heart.png" alt="" loading="lazy">
+          <img src="./images/heart.jpg" alt="">
           D
         </a>
+        <i class="fa-solid fa-bars d-block d-lg-none" onclick="showNavbar()"></i>
         <ul class="navbar m-0 d-flex items-center">
           <li class="nav-item mx-4"><a href="#!" class="nav-link">HOME</a></li>
           <li class="nav-item mx-4"><a href="#!" class="nav-link">COUPLE</a></li>
@@ -83,17 +110,20 @@
               <!-- <i class="fa fa-heart"></i> -->
               <canvas id="canvas"></canvas>
           </div>
-
-          <div class="save-the-date">
-              <h4>Save the date</h4>
-              <span class="date">25 DEC 2023</span>
-          </div>
+      </div>
+      <div class="save-the-date">
+        <div class="save-the-date-animation"></div>
+        <div class="save-the-date-content">
+          <h4>Save the date</h4>
+          <span class="date">25 DEC 2023</span>
+        </div>
       </div>
     </section>
+
     <section class="couple py-5">
       <div class="container py-5 px-0">
         <div class="couple-item groom row d-flex align-items-center">
-          <div class="couple-img col-6 p-0">
+          <div class="couple-img col-12 col-lg-6 p-0">
             <img 
               src="./images/MON03741.jpg" 
               alt="" 
@@ -104,7 +134,7 @@
               data-aos-easing="ease-in-sine"
             > 
           </div>
-          <div class="col-6 p-0 px-5">
+          <div class="col-12 col-lg-6 p-0 px-4 px-lg-5 pt-4 pt-lg-0 pb-5 pb-lg-0">
             <h1>CHÚ RỂ</h1>
             <p>
               Em là nguồn cảm hứng lớn nhất của cuộc đời anh. Tình yêu của chúng ta là điều quý giá nhất, và anh sẵn sàng dành cả cuộc đời này để yêu thương và chăm sóc em. Mỗi khoảnh khắc bên em là niềm hạnh phúc vô tận đối với anh. Anh hứa sẽ luôn ở bên cạnh, yêu thương và che chở em.            </p>
@@ -128,13 +158,13 @@
             </ul>
           </div>
         </div>
-        <div class="couple-item bride row d-flex align-items-center">
-          <div class="col-6 p-0 px-5 text-end">
+        <div class="couple-item bride row d-flex align-items-center flex-column flex-column-reverse flex-lg-row">
+          <div class="col-12 col-lg-6 p-0 px-4 px-lg-5 text-start text-lg-end pt-4 pt-lg-0 pb-5 pb-lg-0">
             <h1>CÔ DÂU</h1>
             <p>
               Anh là người đặc biệt nhất trong cuộc đời em. Tình yêu của chúng ta là nguồn động viên lớn nhất cho em. Em sẵn sàng đi cùng anh trên mọi con đường và hứa sẽ luôn yêu thương và chăm sóc anh. Chúng ta sẽ vượt qua mọi thử thách bằng tình yêu và sự đồng lòng của chúng ta.            </p>
             <span class="signature">Thuỳ Dương</span>
-            <ul class="social-links d-flex justify-content-end p-0 mt-3">
+            <ul class="social-links d-flex justify-content-start justify-content-lg-end p-0 mt-3">
               <li class="me-1">
                 <a href="#">
                   <i class="fa-brands fa-facebook-f"></i>
@@ -152,7 +182,7 @@
               </li>
             </ul>
           </div>
-          <div class="couple-img col-6 p-0">
+          <div class="couple-img col-12 col-lg-6 p-0">
             <img 
               src="./images/BEEE5916.jpg" 
               alt="" 
@@ -165,6 +195,7 @@
         </div>
       </div>
     </section>
+
     <section class="count-down-section py-5">
       <div class="count-down-section-bg"></div>
       <div class="container py-5">
@@ -172,7 +203,7 @@
           <div class="col-lg-5">
             <h2>
               <span>Chúng ta đang chờ đợi...</span>
-              Lễ thành hôn sắp diễn ra
+              Lễ thành hôn diễn ra
             </h2>
           </div>
           <div class="col-lg-7">
@@ -200,6 +231,7 @@
         </div>
       </div>
     </section>
+
     <section class="story-section section-padding">
       <div class="container">
         <div class="row">
@@ -228,15 +260,15 @@
                   </div>
                 </div>
                 <div class="col col-lg-6">
-                  <div class="img-holder">
-                    <img src="./images/" alt="" class="img img-fluid" loading="lazy">
+                  <div class="img-holder w-100">
+                    <img src="./images/gap.jpeg" alt="" class="img img-fluid w-100" loading="lazy">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col col-lg-6">
-                  <div class="img-holder right-align-text story-slider">
-                    <img src="" alt="">
+                  <div class="img-holder right-align-text story-slider w-100 overflow-hidden w-100">
+                    <img src="./images/henho1.jpeg" alt="" class="w-100">
                   </div>
                 </div>
                 <div class="col col-lg-6 text-holder">
@@ -266,14 +298,14 @@
                 </div>
                 <div class="col col-lg-6">
                   <div class="img-holder right-align-text story-slider w-100">
-                    <img src="./images/cauhon.jpeg" alt="" class="w-100">
+                    <img src="./images/merryme.jpeg" alt="" class="w-100">
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col col-lg-6">
-                  <div class="img-holder right-align-text story-slider">
-                    <img src="" alt="">
+                  <div class="img-holder right-align-text story-slider w-100">
+                    <img src="./images/dinhhon.jpeg" alt="" class=" w-100">
                   </div>
                 </div>
                 <div class="col col-lg-6 text-holder">
@@ -318,11 +350,11 @@
             </div>
         </div> 
 
-        <div class="row justify-content-center">
-            <div class="col col-md-10">
+        <div class="row justify-content-center" >
+            <div class="col col-md-10 event-list" id="events">
                 <div class="event">
                   <div class="img-holder">
-                      <img src="images/MON03898.jpg" alt class="img img-fluid" loading="lazy">
+                      <img src="images/anhoi.jpeg" alt class="img img-fluid" loading="lazy">
                   </div>
                   <div class="details">
                       <h3>Lễ Nạp Tài</h3>
@@ -330,7 +362,7 @@
                           <li><i class="fa fa-map-marker"></i> Nga Thạch, Nga Sơn, Thanh Hoá</li>
                           <li><i class="fa-solid fa-clock"></i> 10h, 06/01/2024</li>
                       </ul>
-                      <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                      <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p> -->
                       <a class="see-location-btn popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">
                         Xem vị trí <i class="fa fa-angle-right"></i>
                       </a>
@@ -338,7 +370,7 @@
               </div>
                 <div class="event">
                     <div class="img-holder">
-                        <img src="images/MON03898.jpg" alt class="img img-fluid" loading="lazy">
+                        <img src="images/party1.jpeg" alt class="img img-fluid" loading="lazy">
                     </div>
                     <div class="details">
                         <h3>Bữa tiệc chiêu đãi (Nhà Trai)</h3>
@@ -346,7 +378,7 @@
                             <li><i class="fa fa-map-marker"></i>Nhà văn hoá TK2, Thị Trấn, Nga Sơn, Thanh Hoá</li>
                             <li><i class="fa-solid fa-clock"></i> 10h, 06/01/2024</li>
                         </ul>
-                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p> -->
                         <a class="see-location-btn popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">
                           Xem vị trí <i class="fa fa-angle-right"></i>
                         </a>
@@ -354,7 +386,7 @@
                 </div>
                 <div class="event">
                   <div class="img-holder">
-                      <img src="images/MON03898.jpg" alt class="img img-fluid" loading="lazy">
+                      <img src="images/party2.jpeg" alt class="img img-fluid" loading="lazy">
                   </div>
                   <div class="details">
                       <h3>Bữa tiệc chiêu đãi (Nhà Gái)</h3>
@@ -362,7 +394,7 @@
                           <li><i class="fa fa-map-marker"></i>Nga Thạch, Nga Sơn, Thanh Hoá</li>
                           <li><i class="fa-solid fa-clock"></i> 10h, 06/01/2024</li>
                       </ul>
-                      <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                      <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p> -->
                       <a class="see-location-btn popup-gmaps"
                          href="https://maps.app.goo.gl/LGfkxiSfKTQUa1tS9">
                          Xem vị trí <i class="fa fa-angle-right"></i>
@@ -371,15 +403,15 @@
               </div>
                 <div class="event">
                     <div class="img-holder">
-                        <img src="images/MON04014.jpg" alt class="img img-fluid" loading="lazy">
+                        <img src="images/wedding.jpeg" alt class="img img-fluid" loading="lazy">
                     </div>
                     <div class="details">
-                        <h3>Tiệc cưới</h3>
+                        <h3>Lễ thành hôn</h3>
                         <ul class="p-0">
                             <li><i class="fa fa-map-marker"></i>Nhà văn hoá TK2, Thị Trấn, Nga Sơn, Thanh Hoá</li>
                             <li><i class="fa-solid fa-clock"></i> 10h, 06/01/2024</li>
                         </ul>
-                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                        <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p> -->
                         <a class="see-location-btn popup-gmaps"
                           href="https://maps.app.goo.gl/LGfkxiSfKTQUa1tS9">
                           Xem vị trí <i class="fa fa-angle-right"></i>
@@ -388,251 +420,12 @@
                 </div>
             </div>
         </div> <!-- end row -->
+        <!-- <div class="d-flex align-items-center justify-content-center" id="events-btn">
+          <button onclick="showEvent()">Xem thêm</button>
+        </div>   -->
       </div> 
     </section>
 
-    <!-- start inportant-people-section -->
-    <!-- <section class="inportant-people-section section-padding" id="people">
-      <div class="container">
-          <div class="row">
-              <div class="col col-xs-12">
-                  <div class="section-title">
-                      <div class="vertical-line"><span><img src="images/bird.png" alt="" loading="lazy"></span></div>
-                      <h2>Groomsmen &amp; Bridesmaid</h2>
-                  </div>
-              </div>
-          </div>
-
-          <div class="row">
-              <div class="col col-xs-12">
-                  <div class="inportant-people-content">
-                      <div class="tablist">
-                          <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                              <li class="nav-item" role="presentation">
-                                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#groomsmen" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Groomsmen</button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#bridesmaid" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Bridesmaid</button>
-                              </li>
-                          </ul>
-                      </div>
-
-                      <div class="tab-content" id="pills-tabContent">
-                          <div class="tab-pane fade show active grid-wrapper" id="groomsmen">
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/groomsmen/img-1.jpg" class="popup-image">
-                                          <img src="images/tuan1.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Jhon Michel</h3>
-                                      <span>Best man</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/groomsmen/img-2.jpg" class="popup-image">
-                                        <img src="images/tuan2.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Chasmoos jhon</h3>
-                                      <span>Best friden</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/groomsmen/img-3.jpg" class="popup-image">
-                                        <img src="images/tuan3.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Kaiste pate</h3>
-                                      <span>Friend</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/groomsmen/img-4.jpg" class="popup-image">
-                                        <img src="images/tuan4.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Hatu Michel</h3>
-                                      <span>Friend</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/groomsmen/img-5.jpg" class="popup-image">
-                                        <img src="images/tuan1.jpeg" alt class="img img-fluid"  loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Michel doin</h3>
-                                      <span>Friend</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/groomsmen/img-6.jpg" class="popup-image">
-                                        <img src="images/tuan2.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Topper jone</h3>
-                                      <span>Friend</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="tab-pane fade grid-wrapper" id="bridesmaid">
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/bridesmaid/img-1.jpg" class="popup-image">
-                                        <img src="images/tuan3.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Rachel Li</h3>
-                                      <span>Made of honor</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/bridesmaid/img-2.jpg" class="popup-image">
-                                        <img src="images/tuan4.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Male Vign</h3>
-                                      <span>Best friend</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/bridesmaid/img-3.jpg" class="popup-image">
-                                        <img src="images/tuan1.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Jonny Mich</h3>
-                                      <span>Friend</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/bridesmaid/img-4.jpg" class="popup-image">
-                                        <img src="images/tuan2.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Brodd Wid</h3>
-                                      <span>Friend</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/bridesmaid/img-5.jpg" class="popup-image">
-                                        <img src="images/tuan3.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Nokshal bedi</h3>
-                                      <span>Friend</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                              <div class="grid">
-                                  <div class="img-holder">
-                                      <a href="images/bridesmaid/img-6.jpg" class="popup-image">
-                                        <img src="images/tuan2.jpeg" alt class="img img-fluid" loading="lazy">
-                                      </a>
-                                  </div>
-                                  <div class="details">
-                                      <h3>Holly Fie</h3>
-                                      <span>Friend</span>
-                                      <ul class="social-links">
-                                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div> 
-      </div>
-    </section> -->
-    <!-- end inportant-people-section --> 
     <!-- start gallery-section -->
     <section class="gallery-section section-padding" id="gallery">
       <div class="container">
@@ -640,7 +433,7 @@
               <div class="col col-xs-12">
                   <div class="section-title">
                       <div class="vertical-line"><span><img src="images/bird.png" alt="" loading="lazy"></span></div>
-                      <h2>Ảnh cưới</h2>
+                      <h2>Album ảnh cưới</h2>
                   </div>
               </div>
           </div> <!-- end section-title -->
@@ -662,11 +455,11 @@
                               <img src="images/MON04042.jpg" alt class="img img-fluid" loading="lazy">
                           </a>
                       </div>
-                      <!-- <div class="grid wedding ceremony">
+                      <div class="grid wedding ceremony">
                           <a href="images/BEEE5810.jpg" class="fancybox" data-fancybox-group="gall-1">
                               <img src="images/BEEE5810.jpg" alt class="img img-fluid"  loading="lazy">
                           </a>
-                      </div> -->
+                      </div>
                       <div class="grid ceremony eudcation">
                           <a href="images/BEEE5916.jpg" class="fancybox" data-fancybox-group="gall-1">
                               <img src="images/BEEE5916.jpg" alt class="img img-fluid" loading="lazy">
@@ -707,6 +500,21 @@
                               <img src="images/MON04042.jpg" alt class="img img-fluid" loading="lazy">
                           </a>
                       </div>
+                      <div class="grid wedding">
+                        <a href="images/MON03785.jpg" class="fancybox" data-fancybox-group="gall-1">
+                            <img src="images/MON03898.jpg" alt class="img img-fluid" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="grid wedding">
+                      <a href="images/MON03785.jpg" class="fancybox" data-fancybox-group="gall-1">
+                          <img src="images/MON04042.jpg" alt class="img img-fluid" loading="lazy">
+                      </a>
+                  </div>
+                  <div class="grid wedding">
+                    <a href="images/MON03785.jpg" class="fancybox" data-fancybox-group="gall-1">
+                        <img src="images/MON04014.jpg" alt class="img img-fluid" loading="lazy">
+                    </a>
+                </div>
                   </div>
               </div>
           </div> <!-- end row -->
@@ -714,65 +522,8 @@
     </section>
     <!-- end gallery-section -->
 
-    <!-- <section class="rsvp-section section-padding parallax" data-bg-image="images/MON03906.jpg" data-speed="7" id="rsvp">
-      <div class="container">
-          <div class="row">
-              <div class="col col-xs-12">
-                  <div class="section-title-white">
-                      <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
-                      <h2>Join our party</h2>
-                  </div>
-              </div>
-          </div> 
-
-          <div class="row content justify-content-center">
-              <div class="col-lg-8 col-md-10">
-                  <p>Please reserve before December 16th, 2017.</p>
-                  <form id="rsvp-form" class="form validate-rsvp-form row" method="post">
-                      <div class="col-md-6 mb-4">
-                          <input type="text" name="name" class="form-control" placeholder="Your Name*">
-                      </div>
-                      <div class="col-md-6 mb-4">
-                          <input type="email" name="email" class="form-control" placeholder="Your Email*">
-                      </div>
-                      <div class="col-md-6 mb-4">
-                          <select class="form-control" name="guest" >
-                              <option disabled selected>Number Of Guest*</option>
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                          </select>
-                      </div>
-                      <div class="col-md-6 mb-4">
-                          <select class="form-control" name="events" >
-                              <option disabled selected>I Am Attending*</option>
-                              <option>Al events</option>
-                              <option>Wedding ceremony</option>
-                              <option>Reception party</option>
-                          </select>
-                      </div>
-                      <div class="col-md-12 mb-4">
-                          <textarea class="form-control" name="notes" placeholder="Your Message*"></textarea>
-                      </div>
-                      <div class="col-md-12 mb-4 submit-btn">
-                          <button type="submit" class="submit">Send Invitation</button>
-                          <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>
-                      </div>
-                      <div class="col-md-12 mb-4 success-error-message">
-                          <div id="success">Thank you</div>
-                          <div id="error"> Error occurred while sending email. Please try again later. </div>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div> 
-  </section> -->
-  <!-- end rsvp-section -->
-
-
     <!-- start getting-there-section -->
-    <section class="getting-there-section section-padding">
+    <!-- <section class="getting-there-section section-padding">
       <div class="container">
           <div class="row">
               <div class="col col-xs-12">
@@ -781,7 +532,7 @@
                       <h2>Getting there</h2>
                   </div>
               </div>
-          </div> <!-- end section-title -->
+          </div> 
 
           <div class="row content">
               <div class="col col-lg-6">
@@ -792,11 +543,11 @@
                   <h3>Accommodations</h3>
                   <p> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
               </div>
-          </div> <!-- end row -->
-      </div> <!-- end container -->
-    </section>
+          </div>
+      </div> 
+    </section> -->
            <!-- start gift-registration-section -->
-    <section class="gift-registration-section section-padding">
+    <!-- <section class="gift-registration-section section-padding">
         <div class="container">
             <div class="row">
               <div class="col col-xs-12">
@@ -828,9 +579,9 @@
                         </div>
                     </div>
                 </div>
-            </div> <!-- end row -->
-        </div> <!-- end container -->
-    </section>
+            </div>
+        </div> 
+    </section> -->
     <!-- end gift-registration-section -->
 
     <div class="audio">
@@ -882,12 +633,16 @@
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./js/animation.js"></script>
     <script src="./js/heart-animation.js"></script>
     <script src="./js/script.js"></script>
+    <script src="../js/homepage.js"></script>
     <script>
       AOS.init();
+      // import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
 
       const ivitationCard = document.getElementById('ivitation')
 
@@ -936,13 +691,129 @@
           document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
         }
       }, 1000);
-    }
+      }
 
-    // Bắt đầu bộ đếm ngược khi trang được tải
-    startCountdown();
+      // Bắt đầu bộ đếm ngược khi trang được tải
+      startCountdown();
 
 
+      function showNavbar(){
+      document.getElementById('nav').classList.add('start-0')
+      }
+      function closeNavbar(){
+      document.getElementById('nav').classList.remove('start-0')
+      }
+
+
+      function showEvent() {
+      document.getElementById("event-list").classList.add('show-eventt-list')
+      document.getElementById("events-btn").classList.add('d-none')
+      }
+
+
+
+      let NoteArray = [];
+
+      function addItemToNoteArray() {
+      const name = document.getElementById('nameInput').value;
+      const notes = document.getElementById('notesInput').value;
+
+      const newItem = {
+        name: name,
+        notes: notes
+      };
+
+      NoteArray.push(newItem);
+
+      sessionStorage.setItem('savedData', JSON.stringify(NoteArray));
+
+      document.getElementById('nameInput').value = '';
+      document.getElementById('notesInput').value = '';
+
+      console.log(NoteArray);
+      }
+
+      // Lấy mảng từ localStorage (nếu có)
+      // const savedData = localStorage.getItem('savedData');
+
+      // let dataArray = []; // Khởi tạo mảng rỗng để lưu trữ dữ liệu từ localStorage
+
+      // if (savedData) {
+      //     dataArray = JSON.parse(savedData); // Parse dữ liệu từ chuỗi JSON thành mảng
+      //     console.log("Check data fetch from storage", dataArray)
+      // }
+
+
+
+      // let slidesHTML = '';
+      // savedData.forEach(item => {
+      //     slidesHTML += `
+      //         <div class="swiper-slide bg-white rounded-5 px-5 py-4">
+      //             <i class="fa-solid fa-quote-right"></i>
+      //             <p>- ${item.name}</p>
+      //             <span>${item.notes}</span>
+      //         </div>
+      //     `;
+      // });
+
+      // Thêm HTML vào một phần tử có class là "swiper-container"
+      
+      document.getElementById('swiper-container').innerHTML = `
+        <div class="swiper-wrapper">
+            ${slidesHTML}
+        </div>
+      `;
+
+      // Khởi tạo Swiper
+      var mySwiper = new Swiper('.swiper-container', {
+          // Cài đặt các tùy chọn Swiper ở đây
+          slidesPerView: 1,
+          spaceBetween: 10,
+          loop: true,
+          autoPlay: true
+          // Các tùy chọn khác tùy thuộc vào nhu cầu của bạn
+      });
+      function masonryGridSetting() {
+    const masonryGallery = document.querySelectorAll('.masonry-gallery');
     
+    masonryGallery.forEach(function(masonryItem) {
+        const gridItems = masonryItem.querySelectorAll('.grid');
+        if (gridItems.length > 0) {
+            const msnry = new Masonry(masonryItem, {
+                itemSelector: '.grid',
+                columnWidth: '.grid',
+                percentPosition: true
+            });
+
+            imagesLoaded(masonryItem).on('progress', function() {
+                msnry.layout();
+            });
+        }
+    });
+}
+
+// Gọi hàm để thiết lập lưới Masonry
+masonryGridSetting();function masonryGridSetting() {
+    const masonryGallery = document.querySelectorAll('.masonry-gallery');
+    
+    masonryGallery.forEach(function(masonryItem) {
+        const gridItems = masonryItem.querySelectorAll('.grid');
+        if (gridItems.length > 0) {
+            const msnry = new Masonry(masonryItem, {
+                itemSelector: '.grid',
+                columnWidth: '.grid',
+                percentPosition: true
+            });
+
+            imagesLoaded(masonryItem).on('progress', function() {
+                msnry.layout();
+            });
+        }
+    });
+}
+
+// Gọi hàm để thiết lập lưới Masonry
+masonryGridSetting();
     </script>
 </body>
 
