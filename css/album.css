@@ -1,0 +1,57 @@
+.banner{
+  width: 100%;
+  background-image: url(../images/MON03923.jpg);
+  background-size: cover;
+  background-position-y: 25%;
+}
+@media (max-width: 678.98px) {
+  .banner{
+    background-size: cover;
+    background-position-y:unset;
+    background-position: center;
+  }
+}
+.banner_content{
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  height: 100%;
+  padding: 200px 0;
+  text-align: center;
+}
+.banner_content span{
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  font-size: 66px;
+  color: #FFFF;
+  margin: 59px 0 0;
+  padding: 10px 25px 5px;
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+.site-footer h2{
+  padding: 0 !important;
+}
+/* 
+BEEE5966
+MON03615
+MON03708
+MON03731
+MON03741
+
+MON03765
+MON03781
+MON03785
+MON03870
+MON03898
+MON03906
+MON03923
+
+MON03973
+MON03990
+MON03996
+MON04008
+MON04014
+MON04029
+MON04042
+*/
