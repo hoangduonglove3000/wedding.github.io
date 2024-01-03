@@ -565,10 +565,11 @@
   
   .events-section .event ul li {
     font-size: 16px;
-    font-size: 0.88889rem;
+    font-size: 1rem;
     color: #a9a9a9;
     position: relative;
     padding-left: 22px;
+    font-weight: 500;
   }
   
   @media (max-width: 1199px) {

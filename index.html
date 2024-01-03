@@ -4,21 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="./images/BEEE5810.jpg">
-  <meta property="og:title" content="Đám Cưới của Hoàng & Dương">
-  <meta property="og:description" content="Hãy cùng chia sẻ niềm vui và tình yêu trong ngày cưới của Hoàng và Dương">
+  <meta property="description" content="Anh Hoàng &amp; Thuỳ Dương - Our wedding date: 2023-12-31 | Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí">
 
+  <meta property="og:title" content="Anh Hoàng &amp; Thuỳ Dương Wedding site!">
+  <meta property="og:description" content="Anh Hoàng &amp; Thuỳ Dương - Our wedding date: 2023-12-31 | Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí">
+  <meta property="og:image" content="./images/MON03708.jpg">
+  <meta property="og:image:url" content="./images/MON03708.jpg">
+  <meta property="og:image:secure_url" content="./images/MON03708.jpg">
+  <link rel="shortcut icon" type="image/x-icon" width="100" height="30" href="./images/heart.jpg">
 
-
-    <!-- Favicon and Touch Icons -->
-    <link href="images/heart.png" rel="shortcut icon" type="image/png">
-    <link href="images/heart.png" rel="apple-touch-icon">
-    <link href="images/heart.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="images/heart.png" rel="apple-touch-icon" sizes="114x114">
-    <link href="images/heart.png" rel="apple-touch-icon" sizes="144x144">
+  <link href="./images/heart.png" rel="shortcut icon" type="image/png">
+  <link href="./images/heart.png" rel="apple-touch-icon">
+  <link href="./images/heart.png" rel="apple-touch-icon" sizes="72x72">
+  <link href="./images/heart.png" rel="apple-touch-icon" sizes="114x114">
+  <link href="./images/heart.png" rel="apple-touch-icon" sizes="144x144">
     
 
-  <title>Lovly Wedding</title>
+  <title>Anh Hoàng &amp; Thuỳ Dương Wedding site!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -53,25 +55,33 @@
     <div class="snowflake" style="font-size: 70px;">❆</div>
     <div class="snowflake" style="font-size: 20px;">❆</div>
   </div>
-    
+  <img src="./images/heart.jpg" alt="" class="mx-1 d-none">
   <header class="py-4">
     <div class="container">
       <div class="w-100 d-flex items-center justify-content-between">
-        <a class="logo d-flex items-center justify-content-center" href="!#">
+        <a class="logo d-flex align-items-center justify-content-center" href="index.html">
           H
-          <img src="./images/heart.jpg" alt="">
+          <img src="./images/heart.jpg" alt="" class="mx-1">
           D
         </a>
-        <i class="fa-solid fa-bars d-block d-lg-none" onclick="showNavbar()"></i>
-        <ul class="navbar m-0 d-flex items-center">
-          <li class="nav-item mx-4"><a href="#!" class="nav-link">HOME</a></li>
-          <li class="nav-item mx-4"><a href="#!" class="nav-link">COUPLE</a></li>
-          <li class="nav-item mx-4"><a href="#!" class="nav-link">STORY</a></li>
-          <li class="nav-item mx-4"><a href="#!" class="nav-link">EVENTS</a></li>
-          <li class="nav-item mx-4"><a href="#!" class="nav-link">PEOPLE</a></li>
-          <li class="nav-item mx-4"><a href="#!" class="nav-link">GALLERY</a></li>
-          <li class="nav-item mx-4"><a href="#!" class="nav-link">RSVP</a></li>
-          <li class="nav-item mx-4"><a href="#!" class="nav-link">BLOG</a></li>
+        <div class="d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-bars d-block d-lg-none" onclick="showNavbar()"></i>
+        </div>
+        <ul class="navbar-menu m-0 d-flex items-center" id="navbar-menu">
+          <!-- <div class="navbar-menu-bg d-block d-lg-none" onclick="closeNav()""></div> -->
+          <li class="d-flex d-lg-none">
+            <a class="logo d-flex align-items-center justify-content-center" href="index.html" onclick="closeNav()">
+              H
+              <img src="./images/heart.jpg" alt="" class="mx-1">
+              D
+            </a>
+          </li>
+          <li class="nav-item mx-4"><a href="#hero" class="nav-link" onclick="closeNav()">HOME</a></li>
+          <li class="nav-item mx-4"><a href="#couple" class="nav-link" onclick="closeNav()">CẶP ĐÔI</a></li>
+          <li class="nav-item mx-4"><a href="#gallery" class="nav-link" onclick="closeNav()">ALBUMS</a></li>
+          <li class="nav-item mx-4"><a href="#events" class="nav-link" onclick="closeNav()">SỰ KIỆN</a></li>
+          <li class="nav-item mx-4"><a href="#countdown" class="nav-link" onclick="closeNav()">COUNTDOWN</a></li>
+          <li class="nav-item mx-4"><a href="#story" class="nav-link" onclick="closeNav()">STORY</a></li>
         </ul>
       </div>
     </div>
@@ -95,7 +105,7 @@
         </div>
       </div>
     </div> -->
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="static-hero"></div>
       <div class="particleground"></div>
       <div class="wedding-announcement">
@@ -115,24 +125,17 @@
         <div class="save-the-date-animation"></div>
         <div class="save-the-date-content">
           <h4>Save the date</h4>
-          <span class="date">25 DEC 2023</span>
+          <span class="date">07-01-2024</span>
         </div>
       </div>
     </section>
 
-    <section class="couple py-5">
+    <img src="./images/MON03741.jpg" alt="" class="w-100 d-none" >
+    <section class="couple py-5 overflow-hidden" id="couple">
       <div class="container py-5 px-0">
         <div class="couple-item groom row d-flex align-items-center">
           <div class="couple-img col-12 col-lg-6 p-0">
-            <img 
-              src="./images/MON03741.jpg" 
-              alt="" 
-              class="w-100" 
-              loading="lazy"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            > 
+            <img src="./images/MON03741.jpg" alt="" class="w-100">
           </div>
           <div class="col-12 col-lg-6 p-0 px-4 px-lg-5 pt-4 pt-lg-0 pb-5 pb-lg-0">
             <h1>CHÚ RỂ</h1>
@@ -187,16 +190,13 @@
               src="./images/BEEE5916.jpg" 
               alt="" 
               class="w-100"
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
             >
           </div>
         </div>
       </div>
     </section>
 
-    <section class="count-down-section py-5">
+    <section class="count-down-section py-5" id="countdown">
       <div class="count-down-section-bg"></div>
       <div class="container py-5">
         <div class="row">
@@ -232,7 +232,7 @@
       </div>
     </section>
 
-    <section class="story-section section-padding">
+    <section class="story-section section-padding" id="story">
       <div class="container">
         <div class="row">
           <div class="col col-xs-12">
@@ -249,13 +249,13 @@
         <div class="row">
           <div class="col col-xs-12">
             <div class="story-timeline">
-              <div class="row">
+              <div class="row d-flex flex-column-reverse flex-lg-row">
                 <div class="col col-lg-6">
                   <div class="story-text right-align-text">
                     <h3>Lần gặp đầu</h3>
-                    <span class="date">Jan 12 2023</span>
+                    <span class="date">24/05/2013</span>
                     <p>
-                      Hoàng và Dương lần đầu gặp nhau ở trường THCS Chu Văn An. Ánh mắt đầu tiên đã kết nối họ. Trò chuyện về tranh vẽ dần khiến họ thấy gần nhau hơn. Khoảnh khắc ấy là bắt đầu của một tình yêu đầy cảm xúc và tinh tế.
+                      Hoàng và Dương lần đầu gặp nhau ở trường THPT Ba Đình. Ánh mắt đầu tiên đã kết nối họ. Trò chuyện về tranh vẽ dần khiến họ thấy gần nhau hơn. Khoảnh khắc ấy là bắt đầu của một tình yêu đầy cảm xúc và tinh tế.
                     </p>
                   </div>
                 </div>
@@ -277,20 +277,20 @@
                   </span>
                   <div class="story-text">
                     <h3>Ngày hẹn đầu tiên</h3>
-                    <div class="date">Feb 14 2023</div>
+                    <div class="date">06/09/2018</div>
                     <p>
                       Họ hẹn nhau ở công viên, nơi hoa anh đào nở rộ. Hoàng đưa Dương một bó hoa nhỏ tự làm. Họ cùng nhau đi dạo, chia sẻ nụ cười và câu chuyện về cuộc sống. Kết thúc buổi hẹn với một lời hẹn gặp lại, cả hai cảm thấy vô cùng hạnh phúc.                    </p>
                   </div>
                 </div>
               </div>
-              <div class="row">
+              <div class="row d-flex flex-column-reverse flex-lg-row">
                 <div class="col col-lg-6 text-holder right-heart">
                   <span class="heart">
                     <i class="fa fa-heart"></i>
                   </span>
                   <div class="story-text right-align-text">
                     <h3>Cầu hôn</h3>
-                    <span class="date">Apr 14 2023</span>
+                    <span class="date">25/07/2023</span>
                     <p>
                       Hoàng đưa Dương đến bờ hồ lãng mạn vào một buổi hoàng hôn. Trước bức cảnh đẹp, Hoàng xin Dương lời hứa sống cùng nhau mãi mãi. Trong tiếng sóng nhẹ, Dương đồng ý với nụ cười hạnh phúc. Hai trái tim hòa quyện, đánh dấu bước quan trọng của tình yêu.
                     </p>
@@ -314,7 +314,7 @@
                   </span>
                   <div class="story-text">
                     <h3>Đính hôn"</h3>
-                    <div class="date">Feb 14 2023</div>
+                    <div class="date">05/01/2014</div>
                     <p>
                       Hoàng đã chuẩn bị một buổi tối đặc biệt, trang trí căn phòng bằng những bông hoa yêu thích của Dương. Trước một bữa tối tuyệt vời, Hoàng đưa ra chiếc hộp nhẫn và hỏi Dương: "Hãy làm vợ anh nhé?" Với ánh mắt rạng rỡ, Dương ôm Hoàng và đồng ý, làm cho khoảnh khắc này trở thành kỷ niệm đáng nhớ trong cuộc đời họ.</p>
                   </div>
@@ -337,7 +337,6 @@
       </div> <!-- end container -->
     </section>
     <!-- end cta -->
-
     <!-- start events-section -->
     <section class="events-section section-padding" id="events">
       <div class="container">
@@ -359,11 +358,11 @@
                   <div class="details">
                       <h3>Lễ Nạp Tài</h3>
                       <ul class="p-0">
-                          <li><i class="fa fa-map-marker"></i> Nga Thạch, Nga Sơn, Thanh Hoá</li>
-                          <li><i class="fa-solid fa-clock"></i> 10h, 06/01/2024</li>
+                          <li><i class="fa fa-map-marker"></i>Hậu Thạch, Nga Thạch, Nga Sơn, Thanh Hoá</li>
+                          <li><i class="fa-solid fa-clock"></i> 8h, 05/01/2024</li>
                       </ul>
                       <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p> -->
-                      <a class="see-location-btn popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">
+                      <a class="see-location-btn popup-gmaps" href="https://maps.app.goo.gl/4QK3EapiFnw7i4nf9">
                         Xem vị trí <i class="fa fa-angle-right"></i>
                       </a>
                   </div>
@@ -379,7 +378,8 @@
                             <li><i class="fa-solid fa-clock"></i> 10h, 06/01/2024</li>
                         </ul>
                         <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p> -->
-                        <a class="see-location-btn popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">
+                        <a class="see-location-btn popup-gmaps" 
+                          href="https://maps.app.goo.gl/LGfkxiSfKTQUa1tS9">
                           Xem vị trí <i class="fa fa-angle-right"></i>
                         </a>
                     </div>
@@ -391,12 +391,12 @@
                   <div class="details">
                       <h3>Bữa tiệc chiêu đãi (Nhà Gái)</h3>
                       <ul class="p-0">
-                          <li><i class="fa fa-map-marker"></i>Nga Thạch, Nga Sơn, Thanh Hoá</li>
+                          <li><i class="fa fa-map-marker"></i>Hậu Thạch, Nga Thạch, Nga Sơn, Thanh Hoá</li>
                           <li><i class="fa-solid fa-clock"></i> 10h, 06/01/2024</li>
                       </ul>
                       <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p> -->
                       <a class="see-location-btn popup-gmaps"
-                         href="https://maps.app.goo.gl/LGfkxiSfKTQUa1tS9">
+                         href="https://maps.app.goo.gl/4QK3EapiFnw7i4nf9">
                          Xem vị trí <i class="fa fa-angle-right"></i>
                       </a>
                   </div>
@@ -409,7 +409,7 @@
                         <h3>Lễ thành hôn</h3>
                         <ul class="p-0">
                             <li><i class="fa fa-map-marker"></i>Nhà văn hoá TK2, Thị Trấn, Nga Sơn, Thanh Hoá</li>
-                            <li><i class="fa-solid fa-clock"></i> 10h, 06/01/2024</li>
+                            <li><i class="fa-solid fa-clock"></i> 14h, 07/01/2024</li>
                         </ul>
                         <!-- <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p> -->
                         <a class="see-location-btn popup-gmaps"
@@ -555,12 +555,12 @@
   <!-- start footer -->
   <footer class="site-footer">
     <div class="back-to-top">
-        <a href="#" class="back-to-top-btn"><span><i class="fi flaticon-cupid"></i></span></a>
+      <a href="#" class="back-to-top-btn"><span><i class="fa-solid fa-rocket"></i></span></a>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h2>Hạnh Phúc Là Hành Trình Không Phải Là Đích Đến</h2>
+                <h2>Hạnh Phúc Là Hành Trình <br> Không Phải Là Đích Đến</h2>
                 <span>- Wayne W Dyer</span>
             </div>
         </div> <!-- end row -->
@@ -627,7 +627,7 @@
 
 
       function startCountdown() {
-      var endDate = new Date("2024-01-06T00:00:00Z"); // Thay đổi ngày và giờ kết thúc ở đây
+      var endDate = new Date("2024-01-07T14:05:00Z"); // Thay đổi ngày và giờ kết thúc ở đây
 
       var interval = setInterval(function() {
         var now = new Date().getTime();
@@ -775,6 +775,14 @@ masonryGridSetting();function masonryGridSetting() {
 
 // Gọi hàm để thiết lập lưới Masonry
 masonryGridSetting();
+
+function showNavbar(){
+    document.getElementById("navbar-menu").classList.add("showNavbar")
+}
+
+function closeNav() {
+  document.getElementById("navbar-menu").classList.remove("showNavbar")
+}
     </script>
 </body>
 
