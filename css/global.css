@@ -423,3 +423,9 @@ canvas{
   padding: 10px 20px;
   border-radius: 6px;
 }
+.love-icon{
+  width: 30px;
+  height: 25px;
+  background-image: url(../images/heart.jpg);
+  background-size: cover;
+}
