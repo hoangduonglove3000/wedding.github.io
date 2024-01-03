@@ -8,6 +8,9 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
+.main{
+  overflow: hidden;
+}
 
 .logo{
     font-family: 'Great Vibes', cursive;
@@ -58,7 +61,7 @@ a{
 }
 .social-links{
     display: flex !important;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 0 !important;
 }
 
@@ -288,3 +291,121 @@ a{
   left: 50%;
   transform: translateX(-50%);
 }
+
+.ivitation-cards{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+.ivitation-cards .ivitation-cards-img{
+  width: 800px;
+  overflow: hidden;
+}
+.ivitation-cards .ivitation-cards-img img{
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .ivitation-cards .ivitation-cards-img{
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+canvas{
+  width: 100% !important;
+}
+.audio{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 0 0;
+}
+.swiper-slide{
+  height: 200px !important;
+}
+.swiper-slide i{
+  font-size: 36px;
+  color: #5c978b;
+  text-align: end;
+}
+.swiper-slide p{
+  font-size: 18px;
+}
+.swiper-slide span{
+  display: block;
+  font-size: 20px;
+}
+
+
+.save-the-date{
+  height: 350px;
+  width: 350px;
+  /* background-color: rgba(94, 154, 142, 0.3); */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.save-the-date-animation{
+  height: 350px;
+  width: 350px;
+  background-color: rgba(94, 154, 142, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  animation: save-the-date-pulse 1s;
+  animation-iteration-count: infinite;
+
+}
+
+.save-the-date-content{
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  background-color: rgba(94, 154, 142, 0.7);
+  z-index: 9;
+  text-align: center;
+}
+.save-the-date-content h4{
+  font-family: "Great Vibes", cursive;
+  font-size: 40px;
+  font-size: 2.22222rem;
+  color: #fff;
+  margin: 55px 0 0.2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+.save-the-date-content .date {
+  font-size: 1.11111rem;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+@-webkit-keyframes save-the-date-pulse {
+  from {
+    transform: scale(1.04);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+
