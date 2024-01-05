@@ -680,6 +680,3 @@
 
 })(window.jQuery);
 
-function toAlbum() {
-    document.getElementById("autoplayCanon").play();
-}
